@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multi-Currency Converter</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>    
+
+    <body>
+        <div class="title">Find your exchange rate here!</div>
+        <div class="toggle_switch">
+            <div class="toggle_switch_label">View Historical Rate?</div>
+            <label class="switch">
+                <input class="switch_input" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <input class="switch_date" type="date" hidden>
+        </div>
+        <hr>
+
+        <div class="user_inputs">
+            <div class="choose_btn">Step 1: Choose your country
+                <div class="choose_btn_div">Add country</div>
+            </div>
+
+            <div class="input_amount">Step 2: Input your Amount
+                <input type="text" id="base_amount" value="1">
+            </div>
+            <div class="submit_button">Step 3: Here we go!
+                <div class="submit_btn_div">Submit</div>
+            </div>
+        </div>
+
+        <!-- The Modal for country table-->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>                   
+                <div><table id="chooseTable"></table></div>
+            </div>    
+            <!-- Modal footer -->  
+            <div class="modal-footer" align="center">OK</div>
+        </div>
+
+        <div class="result_div">
+            <div class="result">
+                <div class="result_column_header">
+
+                </div>
+                <div class="result_row_header">
+
+                </div>
+                <div class="result_item">
+
+                </div>
+            </div>
+        </div>
+
+        <script language="JavaScript" type="text/javascript" src="index.js"></script>  
+    </body> 
+</html>
